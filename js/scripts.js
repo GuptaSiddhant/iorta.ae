@@ -25,11 +25,13 @@ $(function () {
         var scroll = $(window).scrollTop();
         //adjust menu background
         if (scroll >= 100) {
+            $('.navbar-brand').removeClass('d-none').addClass('d-block');
             $('.sticky-navigation').removeClass('navbar-dark').addClass('navbar-light').addClass('bg-white').addClass('shadow-bottom');
             $('.btn-navbar').removeClass('btn-outline-secondary').addClass('btn-primary');
         } else {
             $('.sticky-navigation').removeClass('navbar-light').removeClass('bg-white').addClass('navbar-dark').removeClass('shadow-bottom');
             $('.btn-navbar').removeClass('btn-primary').addClass('btn-outline-secondary');
+            $('.navbar-brand').removeClass('d-block').addClass('d-none');
         }
 
         // adjust scroll to top
