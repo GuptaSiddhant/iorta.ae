@@ -3,3 +3,13 @@
     height: 30px;
     font-size: 28px;
 }
+
+.bg1 {
+    background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .bg1 {
+        background-image: url(../img/BG1.jpg);
+    }
+}
